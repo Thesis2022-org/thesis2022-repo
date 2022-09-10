@@ -1,0 +1,25 @@
+<Configuration>
+	<General>
+		<FilePath_StopWords>..\Resources\StopWords\stopwords_en</FilePath_StopWords>
+		<RootDirectory_Train>..\Resources\CorpusNorms\TRAIN</RootDirectory_Train>
+		<RootDirectory_Test>..\Resources\CorpusNorms\TEST</RootDirectory_Test>
+		<FilePath_IMG>..\Resources\Images\</FilePath_IMG>	
+		<FilePath_Norms>..\GoldStandard\GoldStandard_v3.XML</FilePath_Norms>
+		<FilePath_LOG>..\Tests\RESULTS_LOG_</FilePath_LOG>	
+		<accuracyMinClasification>0.8</accuracyMinClasification>
+		<!--
+		<FilePath_TerminosDominio>Recursos\NamedEntity\termMapeo3.txt</FilePath_TerminosDominio>
+		<UrlOntologia>http://localhost:8080/ReformulaPregunta/ReformularPreguntaService?WSDL</UrlOntologia>
+		<NameSpaceOntologia>http://servicioweb/</NameSpaceOntologia>
+		<PathFilePOSTagger>..\Resources</PathFilePOSTagger>
+		<ExpansionConOntologia>false</ExpansionConOntologia>
+		<Mode>Test</Mode>
+		<ExpansionConTerminosDominio>true</ExpansionConTerminosDominio>
+		<ExpansionConEuroWordNet>true</ExpansionConEuroWordNet>
+		<FilePath_Ontologia>QU.OWL</FilePath_Ontologia>
+		<FilePath_EuroWordNet>..\Resources\EuroWordNet</FilePath_EuroWordNet>		
+		
+		-->
+		
+	</General>
+</Configuration>
