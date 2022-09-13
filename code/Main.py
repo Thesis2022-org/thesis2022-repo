@@ -141,7 +141,9 @@ class Norm:
     def process(self):
 
         self.doc = nlp(self.TEXT)
-        displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
+        for sentence in doc.sents:
+          displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
+        #displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
 
         # merge los token de subordinadas condicionales de mas de una palabra
         matches = matcher(self.doc)
