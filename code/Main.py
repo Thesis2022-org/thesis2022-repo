@@ -145,7 +145,7 @@ class Norm:
         for sentence in self.doc.sents:
           displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
           svg = displacy.render(sentence, style="dep", jupyter= False, options={'distance': 80})
-          output_path = Path("./images/"+self.ID+".svg") # you can keep there only "dependency_plot.svg" if you want to save it in the same folder where you run the script 
+          output_path = Path("../results/images/"+self.ID+".svg") # you can keep there only "dependency_plot.svg" if you want to save it in the same folder where you run the script 
           output_path.open("w", encoding="utf-8").write(svg)
         #displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
 
