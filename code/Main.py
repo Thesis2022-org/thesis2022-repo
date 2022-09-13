@@ -138,7 +138,7 @@ class Norm:
 
         #nlp.add_pipe('sentencizer')
         
-        merge_nps = nlp.create_pipe("sentencizer")
+        #merge_nps = nlp.create_pipe("sentencizer")
         #nlp.add_pipe('sentencizer')
         nlp.add_pipe("sentencizer")
 
