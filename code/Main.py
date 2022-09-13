@@ -9,6 +9,7 @@ import Reports
 import spacy
 from spacy.matcher import PhraseMatcher
 from spacy import displacy
+from pathlib import Path
 
 # nlp = spacy.load('en_core_web_lg')
 nlp = spacy.load('en_core_web_lg')
