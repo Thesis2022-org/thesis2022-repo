@@ -503,7 +503,7 @@ class reports():
                 a_pClause += e_pClause
 
         df = pd.DataFrame.from_dict(norms_report, orient='index')
-        df.to_excel('results.xlsx', sheet_name='results')
+        df.to_excel('../results/results.xlsx', sheet_name='results')
 
         print("\nSubject=", a_s, "\nVerb=", a_v, "\nObject", a_o, "\nPClause", a_pClause)
 
