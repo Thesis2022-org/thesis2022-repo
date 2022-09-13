@@ -8,6 +8,7 @@ import Utils_Pln
 import Reports
 import spacy
 from spacy.matcher import PhraseMatcher
+from spacy import displacy
 
 # nlp = spacy.load('en_core_web_lg')
 nlp = spacy.load('en_core_web_lg')
@@ -140,7 +141,7 @@ class Norm:
     def process(self):
 
         self.doc = nlp(self.TEXT)
-        self.displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
+        displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
 
         # merge los token de subordinadas condicionales de mas de una palabra
         matches = matcher(self.doc)
