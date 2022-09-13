@@ -71,11 +71,11 @@ subOrdinanteAdverbialCondition = [
     'when'
 ]
 
-conjuntions_lower = [nlp.make_doc(text) for text in list_conjunctions_lower]
-conjuntions_upper = [nlp.make_doc(text) for text in list_conjunctions_upper]
+conjuntions_lower = [nlp.make_doc(text) for text in subOrdinanteAdverbialCondition]
+conjuntions_capitalize = [nlp.make_doc(text.capitalize()) for text in subOrdinanteAdverbialCondition]
 
 matcher.add('conjunctions_lower', None, *conjuntions_lower)
-matcher.add('conjunctions_upper', None, *conjuntions_upper)
+matcher.add('conjunctions_capitalize', None, *conjuntions_capitalize)
 
 
 class Norm:
@@ -136,8 +136,8 @@ class Norm:
 
         self.evaluation_TAG_AUTOMATIC = []
 
-        # merge_nps = nlp.create_pipe("merge_noun_chunks")
-        # nlp.add_pipe(merge_nps)
+        merge_nps = nlp.create_pipe("merge_noun_chunks")
+        nlp.add_pipe(merge_nps)
 
     def process(self):
 
