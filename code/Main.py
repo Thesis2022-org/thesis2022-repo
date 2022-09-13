@@ -141,7 +141,7 @@ class Norm:
     def process(self):
 
         self.doc = nlp(self.TEXT)
-        for sentence in doc.sents:
+        for sentence in self.doc.sents:
           displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
         #displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
 
