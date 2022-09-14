@@ -71,11 +71,11 @@ subOrdinanteAdverbialCondition = [
     'when'
 ]
 
-conjuntions_lower = [nlp.make_doc(text) for text in subOrdinanteAdverbialCondition]
-conjuntions_capitalize = [nlp.make_doc(text.capitalize()) for text in subOrdinanteAdverbialCondition]
+conjuntions_lower = [nlp.make_doc(text) for text in list_conjunctions_lower]
+conjuntions_upper = [nlp.make_doc(text) for text in list_conjunctions_upper]
 
 matcher.add('conjunctions_lower', None, *conjuntions_lower)
-matcher.add('conjunctions_capitalize', None, *conjuntions_capitalize)
+matcher.add('conjunctions_upper', None, *conjuntions_upper)
 
 
 class Norm:
