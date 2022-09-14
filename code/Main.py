@@ -154,9 +154,9 @@ class Norm:
 
         # merge los token de subordinadas condicionales de mas de una palabra
         matches = matcher(self.doc)
-        # for match_id, start, end in matches:
-        #    span = self.doc[start:end]
-        #    span.merge()
+        for match_id, start, end in matches:
+            span = self.doc[start:end]
+            span.merge()
 
         with self.doc.retokenize() as retokenizer:
             for match_id, start, end in matches:
