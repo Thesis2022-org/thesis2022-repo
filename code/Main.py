@@ -140,7 +140,8 @@ class Norm:
         
         #merge_nps = nlp.create_pipe("sentencizer")
         #nlp.add_pipe('sentencizer')
-        nlp.add_pipe('merge_noun_chunks')
+        #nlp.add_pipe('merge_noun_chunks')
+        print(nlp.pipe_names)
 
     def process(self):
 
