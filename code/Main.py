@@ -156,7 +156,7 @@ class Norm:
         matches = matcher(self.doc)
         for match_id, start, end in matches:
             span = self.doc[start:end]
-            span.merge()
+            #span.merge()
 
         with self.doc.retokenize() as retokenizer:
             for match_id, start, end in matches:
