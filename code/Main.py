@@ -144,8 +144,8 @@ class Norm:
         for sentence in self.doc.sents:
           displacy.render(sentence, style='dep', jupyter=True, options={'distance': 90, 'collapse_phrases' : True, 'compact' : True, 'font':'Times New Roman'})
           svg = displacy.render(sentence, style="dep", jupyter= False, options={'distance': 90, 'collapse_phrases' : True, 'compact':True, 'font': 'Times New Roman'})
-          output_path = Path("../results/images/"+self.ID+".svg") # you can keep there only "dependency_plot.svg" if you want to save it in the same folder where you run the script 
-          output_path.open("w", encoding="utf-8").write(svg)
+          output_path = Path("../results/images/"+self.ID[18:20]+".png") # you can keep there only "dependency_plot.svg" if you want to save it in the same folder where you run the script 
+          output_path.open("w", encoding="utf-8").write(png)
         #displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
 
         # merge los token de subordinadas condicionales de mas de una palabra
