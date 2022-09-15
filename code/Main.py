@@ -136,7 +136,7 @@ class Norm:
 
         self.evaluation_TAG_AUTOMATIC = []
         
-        nlp.add_pipe('merge_noun_chunks')
+        
 
     def process(self):
 
