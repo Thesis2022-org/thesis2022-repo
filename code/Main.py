@@ -135,13 +135,8 @@ class Norm:
         self.doc = ""
 
         self.evaluation_TAG_AUTOMATIC = []
-
-        #nlp.add_pipe('sentencizer')
         
-        #merge_nps = nlp.create_pipe("sentencizer")
-        #nlp.add_pipe('sentencizer')
-        #nlp.add_pipe('merge_noun_chunks')
-        print(nlp.pipe_names)
+        nlp.add_pipe('merge_noun_chunks')
 
     def process(self):
 
