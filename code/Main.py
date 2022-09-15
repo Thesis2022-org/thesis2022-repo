@@ -142,8 +142,8 @@ class Norm:
 
         self.doc = nlp(self.TEXT)
         for sentence in self.doc.sents:
-          displacy.render(sentence, style='dep', jupyter=True, options={'distance': 50})
-          svg = displacy.render(sentence, style="dep", jupyter= False, options={'distance': 50})
+          displacy.render(sentence, style='dep', jupyter=True, options={'distance': 90, 'collapse_phrases' : True, 'compact' : True})
+          svg = displacy.render(sentence, style="dep", jupyter= False, options={'distance': 90, 'collapse_phrases' : True, 'compact':True})
           output_path = Path("../results/images/"+self.ID+".svg") # you can keep there only "dependency_plot.svg" if you want to save it in the same folder where you run the script 
           output_path.open("w", encoding="utf-8").write(svg)
         #displacy.render(sentence, style='dep', jupyter=True, options={'distance': 80})
